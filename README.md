@@ -39,5 +39,4 @@ curl http://localhost:5001/api/tasks -H "Authorization: Bearer <TOKEN>"
 ## Porting to Django
 The same model maps directly to Django: `users`/`tasks` become models, JWT auth becomes `djangorestframework-simplejwt`, and each route becomes a DRF `ViewSet`. The auth/permission logic (owner-only vs admin-all) is identical — it just moves into DRF permission classes.
 
-## Portfolio notes
-Good talking points: password hashing, JWT expiry handling, role-based access control at the query level (not just the route level — note how `list_tasks` filters differently for admin vs user).
+
