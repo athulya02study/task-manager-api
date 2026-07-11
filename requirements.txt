@@ -1,0 +1,3 @@
+flask
+PyJWT
+psycopg2-binary
